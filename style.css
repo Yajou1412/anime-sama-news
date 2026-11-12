@@ -1,0 +1,72 @@
+/*Tout ce qui est écrit entre ces deux séparateurs est considéré comme un commentaire*/
+
+/*Modifier certaines propriétés ci-dessous en précisant le changement réalisé dans un commentaire créé pour cela*/
+
+body 
+h1 {
+    /*Couleur d'arrière-fond*/
+    background-color: rgb(0, 0, 0);
+    /*réserve une espace de 50px entre le contenu et le haut de la zone réservée à body*/
+    padding-top: 10px;
+    /*même chose mais avec le bas de la zone*/
+    padding-bottom: 50px;
+    /*Gestion d'une numérotation automatique des titres de niveau 3 (cf. h3 et h3:before ) : mise à zéro au démarrage */
+    counter-reset: numh3;
+
+    /* Ne pas hésiter à utiliser le site https://developer.mozilla.org/fr/ pour découvrir au travers d'exemples des prorpiétés du CSS */
+}
+
+h2 {img.UNE{
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+}   img.LA{
+    display: inline-block;
+    max-width: 3%;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 0px;
+}
+
+}
+
+h3 {
+    /*Gestion d'une numérotation automatique des titres de ce niveau */
+    counter-increment: numh3;
+}
+h3:before {
+    /*Positionnement de la numérotation automatique des titres de ce niveau avant le texte */
+    content: counter(numh3)".";
+}
+
+img.centrer {
+    /* pour centrer des images de la classe centrer 
+    Seules les balises img où l'attribut class a pour valeur "centrer" suivent les propriétés suivantes servant à centrer l'image */
+    display: block;
+    margin: 0 auto;
+  }
+
+#element_unique {
+    /* seule la balise unique sur la page html identifiée par id="element_unique" suit les propriétés suivantes servant à mettre en italique et en gras le texte*/
+    font-style: italic;
+    font-weight: bold;
+}
+  
+h1 img{
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p, li, ul, ol, h1, h3 {
+    color: white;
+}
+
+a {
+    color: #66b3ff;
+}
+/* Attention ! Rajouter des sélecteurs p, h1, ul, ol, li, ... afin de modifier leur mise en forme*/
